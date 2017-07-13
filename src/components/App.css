@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 5px;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+header form > * {
+  margin: 5px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}

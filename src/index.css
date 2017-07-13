@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  background: #030;
+  padding: 0;
+}
+
+body, #root, [data-reactroot] {
+  height: 100%;
+  overflow: hidden;
+}

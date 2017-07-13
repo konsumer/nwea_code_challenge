@@ -1,0 +1,17 @@
+.Game {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  cursor: pointer;
+}
+
+.Game .player {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+
+.Game ::selection { background: transparent; }
+.Game ::-moz-selection { background: transparent; }

@@ -1,0 +1,31 @@
+.Card {
+  border: 1px solid #000;
+  width: 65px;
+  height: 100px;
+  margin: 2px;
+  padding: 2px 0;
+  position:relative;
+  background: #fff;
+  color: #000;
+  transition: margin 0.5s ease-in-out;
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5);
+  display: block;
+  float: left;
+}
+
+.Card.red  {
+  color: red;
+}
+
+.Card > .bottom {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.Card > .top, .Card > .bottom {
+  padding-left: 5px;
+}
+
+
