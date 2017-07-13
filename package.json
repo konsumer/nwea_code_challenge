@@ -1,5 +1,6 @@
 {
   "name": "nwea_code_challenge",
+  "description": "NWEA War - Code Challenge - David Konsumer",
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
