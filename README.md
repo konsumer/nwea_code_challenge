@@ -26,6 +26,7 @@ You can install dependencies with `npm install`.
 
 I didn't have a great deal of time (about 4 hours) to work on it. I consider it a rough prototype, which I woud further componentize and build out, given more time. Here are some things I would improve:
 
+* Game doesn't actually work. "war-mode" needs to be implemented, as well as card comparisons on each turn
 * More complete component & unit testing
 * Networking: it'd be neat if it ran over socket.io for networked multiplayer.
 * Improved styling: The card style could be greatly improved, and some CSS animations would make everything really slick.

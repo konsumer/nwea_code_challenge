@@ -4,6 +4,7 @@
  * @return {number[]}          An array of the card values of winner(s)
  */
 export const getWinners = (showing) => {
+  // TODO: Implement this
   // XXX: 1st player always wins, now
   return [showing[0]]
 }
@@ -64,7 +65,7 @@ export const MOVE = ({numberOfPlayers, ...state}) => {
   if (winners.length === 1) { // 1 winner, no war, all others give this player their card
     const winner = showing.indexOf(winners[0])
     showing.forEach(card => {
-      if (card !== null && hands[winner].length <= (52 - numberOfPlayers)) {
+      if (card !== null && hands[winner].length <= 52) {
         hands[winner].unshift(card)
       }
     })
@@ -73,7 +74,7 @@ export const MOVE = ({numberOfPlayers, ...state}) => {
   }
   for (let i = 0; i < numberOfPlayers; i++) {
     if (hands[i].length) {
-      if (hands[i].length <= (52 - numberOfPlayers)) {
+      if (hands[i].length <= 52) {
         const card = hands[i].pop()
         showing[i] = card
       }
