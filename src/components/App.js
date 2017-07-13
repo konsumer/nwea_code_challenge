@@ -28,7 +28,7 @@ export const App = ({ numberOfPlayers, onNewGame, onPlayer, onNextMove}) => (<di
     </form>
   </header>
   <main onClick={onNextMove}>
-    Click the gameboard to progress.
+    Click the gameboard to progress. The goal is to get all the cards.
     <Game />
   </main>
 </div>)

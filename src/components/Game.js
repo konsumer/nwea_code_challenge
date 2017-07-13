@@ -5,8 +5,11 @@ import './Game.css'
 
 import Card from './Card'
 
-export const Game = ({ showing }) => (<section className='Game'>
-  {showing.map((c, i) => <div className='player'><Card card={c} />player {i + 1}</div>)}
+export const Game = ({ showing, hands }) => (<section className='Game'>
+  {showing.map((c, i) => <div key={i} className='player'>
+    {hands[i].length ? <Card card={c} /> : <div className='Card out'>out</div>}
+    player {i + 1} ({hands[i].length ? hands[i].length + 1 : 0})
+  </div>)}
 </section>)
 
 export default connect(state => state, dispatch => ({}))(Game)

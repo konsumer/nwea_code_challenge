@@ -5,9 +5,7 @@ import actions from './actions'
 const initialState = {
   numberOfPlayers: 2,
   hands: [],
-  discard: [],
-  showing: [],
-  scores: []
+  showing: []
 }
 
 // Redux store built from defined actions

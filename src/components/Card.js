@@ -21,7 +21,7 @@ export const getSuit = value => ('♠♣♥♦')[value % 4]
  * @return {string}       One of A 1 2 3 4 5 6 7 8 9 10 J Q K
  */
 export const getVal = value => {
-  const n = ('A234567890JQK')[(value / 4) | 0]
+  const n = ('234567890JQKA')[(value / 4) | 0]
   return n === '0' ? '10' : n
 }
 
