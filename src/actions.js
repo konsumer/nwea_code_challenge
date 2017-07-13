@@ -64,15 +64,19 @@ export const MOVE = ({numberOfPlayers, ...state}) => {
   if (winners.length === 1) { // 1 winner, no war, all others give this player their card
     const winner = showing.indexOf(winners[0])
     showing.forEach(card => {
-      if (card !== null) {
+      if (card !== null && hands[winner].length <= (52 - numberOfPlayers)) {
         hands[winner].unshift(card)
       }
     })
+  } else {
+    // TODO: enter war-mode between winners
   }
   for (let i = 0; i < numberOfPlayers; i++) {
     if (hands[i].length) {
-      const card = hands[i].pop()
-      showing[i] = card
+      if (hands[i].length <= (52 - numberOfPlayers)) {
+        const card = hands[i].pop()
+        showing[i] = card
+      }
     } else {
       showing[i] = null
     }
